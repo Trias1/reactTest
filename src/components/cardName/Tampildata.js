@@ -6,6 +6,8 @@ import Header from './Header';
 import Tasks from './Tasks'
 import Kartunama from './Kartunama'
 
+import '../../commons/index.css'
+
 // Importing Packages
 import { v4 as uuidv4 } from 'uuid';
 import Swal from "sweetalert2";

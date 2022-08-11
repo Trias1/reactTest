@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: "Josefin Sans", sans-serif;
   background-size: cover;
@@ -30,14 +35,14 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.container {
+/* .container {
   max-width: 600px;
   margin: 10px auto;
   overflow: auto;
   min-height: 300px;
   border-radius: 5px;
   background-color: #ccc;
-}
+} */
 
 .btn {
   display: inline-block;
@@ -65,10 +70,10 @@ body {
 
 .task {
   background: #f4f4f4;
-  margin: 5px auto;
+  margin: 3rem auto ;
   max-width: 100%;
   padding: 20px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: scroll;
   /* display: flex; */
   justify-content: space-between;
@@ -91,6 +96,75 @@ body {
   color: blue;
   cursor: pointer;
 }
+
+.containers{
+  height: 100vh;
+ }
+.cards{
+  width: 380px;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  background-color: #fff;
+  position: relative;
+  height: 370px;
+  margin-bottom: 1rem;
+ }
+
+ .upper{
+
+  height: 100px;
+
+ }
+
+ .upper img{
+
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+ }
+
+ .user{
+  position: relative;
+ }
+
+ .profile img{
+
+  
+  height: 80px;
+  width: 80px;
+  margin-top:2px;
+
+ 
+ }
+
+ .profile{
+
+  position: absolute;
+  top:-50px;
+  left: 38%;
+  height: 90px;
+  width: 90px;
+  border:3px solid #fff;
+
+  border-radius: 50%;
+
+ }
+
+ .follow{
+
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 35px;
+ }
+
+ .stats span{
+
+  font-size: 16px;
+ }
+
 
 @media (max-width: 768px) {
   .spinnerContainer {
