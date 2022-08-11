@@ -1,14 +1,14 @@
 {
-    "data": [
-      {
-        "id": 1,
-        "title": "Hello bro",
-        "done": false
-      },
-      {
-        "title": "Testing",
-        "done": true,
-        "id": 2
-      }
-    ]
+  "data": [
+    {
+      "id": 1,
+      "title": "Hello bro",
+      "done": false
+    },
+    {
+      "title": "Testing",
+      "done": true,
+      "id": 2
+    }
+  ]
 }
