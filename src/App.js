@@ -1,6 +1,6 @@
-import React, { Suspense, Fragment } from 'react';
-import Loader from 'react-loader'
-import Main from './components/Route/index'
+import React, { Suspense, Fragment } from "react";
+import Loader from "react-loader";
+import Main from "./components/Route/index";
 
 function App() {
   return (
@@ -9,16 +9,18 @@ function App() {
     // </>
     <Fragment>
       <div className="App">
-        <Suspense fallback={
-          <div className="loader-container">
-            <div className="loader-container-inner">
-              <div className="text-center">
-                <Loader type="semi-circle-spin" />
+        <Suspense
+          fallback={
+            <div className="loader-container">
+              <div className="loader-container-inner">
+                <div className="text-center">
+                  <Loader type="semi-circle-spin" />
+                </div>
               </div>
             </div>
-          </div>
-        }>
-          <Main/>
+          }
+        >
+          <Main />
         </Suspense>
       </div>
     </Fragment>
@@ -26,4 +28,3 @@ function App() {
 }
 
 export default App;
-

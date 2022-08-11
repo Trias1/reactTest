@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   font-family: "Josefin Sans", sans-serif;
   background-size: cover;
@@ -70,8 +69,8 @@ body {
 
 .task {
   background: #f4f4f4;
-  margin: 3rem auto ;
-  max-width: 100%;
+  margin: 3rem auto;
+  max-width: 70%;
   padding: 20px 20px;
   border-radius: 10px;
   overflow: scroll;
@@ -80,6 +79,21 @@ body {
 }
 
 .task::-webkit-scrollbar {
+  display: none;
+}
+
+.tasks {
+  background: #f4f4f4;
+  margin: 3rem auto;
+  max-width: 100%;
+  padding: 20px 20px;
+  border-radius: 10px;
+  overflow: scroll;
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.tasks::-webkit-scrollbar {
   display: none;
 }
 
@@ -97,10 +111,10 @@ body {
   cursor: pointer;
 }
 
-.containers{
+.containers {
   height: 100vh;
- }
-.cards{
+}
+.cards {
   width: 380px;
   border: none;
   border-radius: 15px;
@@ -109,62 +123,49 @@ body {
   position: relative;
   height: 370px;
   margin-bottom: 1rem;
- }
+}
 
- .upper{
-
+.upper {
   height: 100px;
+}
 
- }
-
- .upper img{
-
+.upper img {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
 
- }
-
- .user{
+.user {
   position: relative;
- }
+}
 
- .profile img{
-
-  
+.profile img {
   height: 80px;
   width: 80px;
-  margin-top:2px;
+  margin-top: 2px;
+}
 
- 
- }
-
- .profile{
-
+.profile {
   position: absolute;
-  top:-50px;
+  top: -50px;
   left: 38%;
   height: 90px;
   width: 90px;
-  border:3px solid #fff;
+  border: 3px solid #fff;
 
   border-radius: 50%;
+}
 
- }
-
- .follow{
-
+.follow {
   border-radius: 15px;
   padding-left: 20px;
   padding-right: 20px;
   height: 35px;
- }
+}
 
- .stats span{
-
+.stats span {
   font-size: 16px;
- }
-
+}
 
 @media (max-width: 768px) {
   .spinnerContainer {
